@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KABADIWALA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div id="navTitle"><b>KABADIWALA</b></div>
+    <div>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('marketplace')">Market Place</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="loadProfile()" id="profileBtn" style="display:none;">Profile</button>
+        <button onclick="showSection('login')" id="loginBtn">Login</button>
+        <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
+    </div>
+</div>
+
+<!-- HOME -->
+<div id="home" class="section active">
+    <h2>WELCOME TO KABADIWALA</h2>
+    <p>From scrap to smart income</p>
+  
+</div>
+</div>
+
+<!-- MARKETPLACE -->
+<div id="marketplace" class="section">
+    <h2>Scrap Marketplace</h2>
+
+    <button class="add-btn" onclick="toggleForm()">+ Add Product</button>
+
+    <div id="addProductForm" class="add-form">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="text" id="productPrice" placeholder="Price per kg">
+        <input type="file" id="productImage" accept="image/*">
+        <button onclick="addProduct()">Add</button>
+    </div>
+
+    <div class="card-container" id="productContainer">
+
+        <div class="card">
+            <img src="newspaper.jpg" alt="Newspaper">
+            <h3>Newspaper</h3>
+            <p>₹15 / kg</p>
+            <button onclick="sellItem(this)">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="plastic.jpg" alt="Plastic">
+            <h3>Plastic</h3>
+            <p>₹10 / kg</p>
+            <button onclick="sellItem(this)">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="iron.jpg" alt="Iron">
+            <h3>Iron</h3>
+            <p>₹25 / kg</p>
+            <button onclick="sellItem(this)">Buy</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section about-section">
+
+    <div class="about-hero">
+        <h2>About Kabadiwala ♻</h2>
+        <p>Turning scrap into smart income while protecting our planet.</p>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-card">
+            <h3>🌍 Our Mission</h3>
+            <p>
+                To simplify scrap selling and promote eco-friendly recycling
+                by connecting households directly with trusted scrap buyers.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>🚀 Our Vision</h3>
+            <p>
+                To become India's most trusted digital scrap marketplace
+                and encourage sustainable waste management practices.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>💚 Why Choose Us?</h3>
+            <ul>
+                <li>✔ Easy scrap selling</li>
+                <li>✔ Transparent pricing</li>
+                <li>✔ Instant confirmation</li>
+                <li>✔ Eco-friendly impact</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- RECYCLING PROCESS -->
+    <div class="recycle-section">
+
+        <h2 class="recycle-title">♻ How Recycling Works</h2>
+
+        <div class="recycle-steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Collect Scrap</h3>
+                <p>Users add and sell scrap materials through Kabadiwala marketplace.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Sorting</h3>
+                <p>Scrap is sorted into categories like paper, plastic, metal, and glass.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Processing</h3>
+                <p>Materials are cleaned and processed into reusable raw materials.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Reuse & Manufacturing</h3>
+                <p>Recycled materials are used to create new eco-friendly products.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RECYCLED PRODUCTS GALLERY -->
+    <div class="recycled-gallery">
+
+        <h2 class="gallery-title">♻ Products Made from Recycled Materials</h2>
+
+        <div class="gallery-row">
+
+            <div class="gallery-item">
+                <img src="recycled-paper.jpg" alt="Recycled Paper Products">
+            </div>
+
+            <div class="gallery-item">
+                <img src="recycled-plastic.jpg" alt="Recycled Plastic Furniture">
+            </div>
+
+            <div class="gallery-item">
+                <img src="recycled-metal.jpg" alt="Recycled Metal Products">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="section">
+    <div class="login-box">
+        <h2 id="loginTitle">Login</h2>
+
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter Password">
+            <span class="toggle-eye" onclick="togglePassword()">👁</span>
+        </div>
+
+        <div id="errorMsg" class="error"></div>
+
+        <button onclick="handleAuth()">Login</button>
+
+        <p style="text-align:center; margin-top:10px;">
+            <span id="toggleText">Don't have an account?</span>
+            <a href="#" onclick="toggleAuth()">Register</a>
+        </p>
+    </div>
+</div>
+
+<!-- PROFILE -->
+<div id="profile" class="section">
+    <div class="profile-container">
+        <div class="profile-card">
+
+            <div class="profile-header">
+
+                <div class="profile-avatar" id="profileAvatar">
+                    <img id="profileImagePreview" style="display:none;">
+                    <span id="profileInitial">A</span>
+                </div>
+
+                <input type="file" id="profileImageInput"
+                       accept="image/*"
+                       onchange="previewProfileImage(event)">
+
+                <h2 id="profileNameHeading">My Profile</h2>
+
+            </div>
+
+            <div class="profile-form">
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter phone number">
+
+                <label>Address</label>
+                <input type="text" id="address" placeholder="Enter address">
+
+                <button onclick="saveProfile()" class="save-btn">
+                    Save / Update Profile
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<!-- SELL MODAL -->
+<div id="sellModal" class="modal">
+    <div class="modal-content">
+        <h2>Sell Scrap</h2>
+
+        <p><strong id="sellItemName"></strong></p>
+        <p>Price per kg: ₹<span id="sellPricePerKg"></span></p>
+
+        <label>Location</label>
+        <input type="text" id="sellLocation" placeholder="Enter pickup location">
+
+        <label>Weight (kg)</label>
+        <input type="number" id="sellWeight" placeholder="Enter weight" oninput="calculateTotal()">
+
+        <p>Total Amount: ₹<span id="sellTotal">0</span></p>
+
+        <button onclick="confirmSell()">Confirm Purchase</button>
+        <button onclick="closeModal()" class="cancel-btn">Cancel</button>
+    </div>
+</div>
+</body>
+</html>

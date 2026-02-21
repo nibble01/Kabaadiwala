@@ -1,0 +1,586 @@
+/* ================= GENERAL ================= */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* ================= SPLASH PAGE ================= */
+
+.splash-body{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+}
+
+.splash-container img{
+    width:160px;
+    animation:logoZoom 2s ease forwards;
+}
+
+@keyframes logoZoom{
+    0%{
+        transform: scale(0);
+        opacity:0;
+    }
+    60%{
+        transform: scale(1.1);
+        opacity:1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#000000;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+.navbar button{
+    background:white;
+    color:#000000;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-left:10px;
+    border-radius:5px;
+}
+
+/* ================= SECTION CONTROL ================= */
+
+.section{
+    display:none;
+    padding:30px;
+}
+
+.section.active{
+    display:block;
+}
+
+/* ================= HOME ================= */
+
+#home{
+    position: relative;
+    min-height: 90vh;
+    background: url("background.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px;
+}
+
+#home::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#home h2,
+#home p{
+    position:relative;
+    z-index:2;
+}
+
+/* ================= MARKETPLACE ================= */
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:200px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.card button{
+    background:#000000;
+    color:white;
+    border:none;
+    padding:8px;
+    width:100%;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.add-btn{
+    background:#27ae60;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+.add-form{
+    display:none;
+    margin-bottom:20px;
+}
+
+.add-form input{
+    padding:8px;
+    margin:5px;
+}
+
+.add-form button{
+    padding:8px 12px;
+    background:#2ecc71;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+/* ================= LOGIN ================= */
+
+/* ================= MODERN LOGIN PAGE ================= */
+
+/* LOGIN BACKGROUND ONLY WHEN ACTIVE */
+#login{
+    background: linear-gradient(135deg, #ffffff, #000000);
+}
+
+/* Only apply flex when section is active */
+#login.section.active{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Glass Effect Card */
+.login-box{
+    width:380px;
+    padding:40px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    color:white;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+/* Inputs */
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background: rgba(255,255,255,0.2);
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.login-box input::placeholder{
+    color:#ddd;
+}
+
+.login-box input:focus{
+    background: rgba(255,255,255,0.3);
+    box-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Password Wrapper */
+.password-wrapper{
+    position:relative;
+}
+
+.toggle-eye{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:16px;
+    color:white;
+}
+
+/* Login Button */
+.login-box button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    background:#27ae60;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* Register Text */
+.login-box p{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.login-box a{
+    color:#fff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.login-box a:hover{
+    text-decoration:underline;
+}
+
+.error{
+    color:#ff4d4d;
+    font-size:13px;
+    text-align:center;
+}
+/* ================= PROFILE ================= */
+
+.profile-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+.profile-card{
+    background:white;
+    width:400px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.profile-card:hover{
+    transform:translateY(-5px);
+}
+
+.profile-header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.profile-avatar{
+    width:100px;
+    height:100px;
+    background:#27ae60;
+    border-radius:50%;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 15px auto;
+    position:relative;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.profile-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#profileImageInput{
+    display:block;
+    margin:10px auto;
+}
+
+.profile-form label{
+    font-size:14px;
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+}
+
+.profile-form input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    outline:none;
+    transition:0.2s;
+}
+
+.profile-form input:focus{
+    border:1px solid #27ae60;
+    box-shadow:0 0 5px rgba(39,174,96,0.3);
+}
+
+.save-btn{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#27ae60;
+    border:none;
+    color:white;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.save-btn:hover{
+    background:#219150;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section{
+    padding:50px 30px;
+    background:#f9f9f9;
+}
+
+.about-hero{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.about-hero h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.about-hero p{
+    font-size:18px;
+    color:#555;
+}
+
+.about-content{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.about-card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-5px);
+}
+
+.about-card p,
+.about-card ul{
+    color:#555;
+}
+
+/* ================= RECYCLING PROCESS ================= */
+
+.recycle-section{
+    margin-top:60px;
+    text-align:center;
+}
+
+.recycle-title{
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+.recycle-steps{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.step{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.step:hover{
+    transform:translateY(-8px);
+}
+
+.step-number{
+    width:50px;
+    height:50px;
+    background:#27ae60;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    font-weight:bold;
+    margin:0 auto 15px auto;
+}
+
+/* ================= GALLERY ================= */
+
+.recycled-gallery{
+    margin-top:60px;
+    text-align:center;
+}
+
+.gallery-title{
+    font-size:26px;
+    margin-bottom:30px;
+}
+
+.gallery-row{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.gallery-item{
+    width:250px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.gallery-item img:hover{
+    transform:scale(1.05);
+}
+
+/* SELL MODAL */
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:10px;
+    text-align:left;
+}
+
+.modal-content input{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+}
+
+.modal-content button{
+    margin-top:10px;
+    padding:8px 12px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.cancel-btn{
+    background:#ccc;
+}
+
+/* ================= LIVE PRICE SECTION ================= */
+
+.price-section{
+    margin-top:40px;
+    text-align:center;
+}
+
+.price-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.price-card{
+    background:white;
+    width:200px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-5px);
+}
+
+.price-card h3{
+    margin-bottom:10px;
+}
+
+.price-card p{
+    font-size:20px;
+    font-weight:bold;
+    color:#27ae60;
+}
