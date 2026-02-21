@@ -16,15 +16,44 @@
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+Kabadiwala is a digital platform that connects local kabadiwalas directly with large-scale plastic recyclers and potential customers ensuring transparent pricing.The system eliminates middlemen exploitation and strengthens an efficient traceable recycling supply chain.
 ### The Problem statement
-[What problem are you solving?]
+The recycling system depends on kabadiwalas, people, and recyclers — but the lack of connection between them creates daily struggles and inefficiencies.
+Kabadiwalas (Waste Collectors):
+Work hard collecting recyclables but often don’t know the fair price for scrap
+Depend on middlemen, leading to lower earnings and exploitation
+Have irregular demand and limited direct access to recyclers
+People / Households:
+Want to recycle but find it inconvenient to contact trusted kabadiwalas
+Lack awareness about the value of scrap and proper segregation
+Face issues with pickup scheduling, leading to recyclable waste being mixed with general waste
+Recyclers (Companies):
+Struggle to get a consistent supply of clean, sorted plastic
+Deal with quality issues because waste is not segregated properly at the source
+Have difficulty tracing and verifying sources of collected materials
+Depend on fragmented collection channels, increasing operational costs
+
+Overall Impact:
+
+Income inequality for kabadiwalas
+Reduced recycling efficiency and material wastage
+Lower participation from households
+Environmental damage due to poor waste management
+
+these highlight the need for a transparent, connected, and incentive-driven platform that supports collectors, empowers citizens, and ensures reliable supply for recyclers.
 
 ### The Solution
-[How are you solving it?]
+We propose a digital marketplace platform that directly connects:
+Local Kabadiwalas,Households and plastic recyclers
+Key Features:
+•Transparent Dynamic Pricing
+•Real-time plastic rates based on:Type (PET, HDPE, LDPE, etc.)
+•Quality grade
+•Market demand
+•Removes middlemen exploitation.
+•Logistics Coordination
+•Recycler-side bulk demand orders.
 
----
 
 ## Technical Details
 
@@ -32,16 +61,16 @@
 
 **For Software:**
 - Languages used: Html,CSS,Javascript
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
+- Frameworks used: Nil
+- Libraries used: Nil
 - Tools used: VS Code
 
-**For Hardware:**
+or Hardware:**
 - Main components: [List main components]
-- Specifications: [Technical specifications]
+- Specific**Fations: [Technical specifications]
 - Tools required: [List tools needed]
 
----
+
 
 ## Features
 
