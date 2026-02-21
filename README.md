@@ -13,8 +13,7 @@
 - Member 2: Anjana P.A - Muthoot Institute of Technology and Science
 
 ### Hosted Project Link
-[mention your project hosted link here]
-
+https://nibble01.github.io/Kabaadiwala/
 ### Project Description
 Kabadiwala is a digital platform that connects local kabadiwalas directly with large-scale plastic recyclers and potential customers ensuring transparent pricing.The system eliminates middlemen exploitation and strengthens an efficient traceable recycling supply chain.
 ### The Problem statement
@@ -75,10 +74,10 @@ or Hardware:**
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1:Allows kabadiwalas and households to create verified profiles
+- Feature 2:Stores contact details, location, and waste preferences
+- Feature 3:Ensures consistent sourcing and better supply chain planning
+- Feature 4:Improves transparency and reliability in waste collection
 
 ---
 
