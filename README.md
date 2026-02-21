@@ -111,15 +111,23 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+Screenshot1
+<p align="center">
+  <img src="./page1.png" alt="Project Banner" width="100%">
+</p>
+Home Page
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+Screenshot2
+<p align="center">
+  <img src="./page4.png" alt="Project Banner" width="100%">
+</p>
+Market Place where kabadiwalas and recyclers can buy scraps 
+Screenshot3
+<p align="center">
+  <img src="./page3.png" alt="Project Banner" width="100%">
+</p>
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+login or register page
 #### Diagrams
 
 **System Architecture:**
@@ -146,13 +154,16 @@ List the key features of your project:
 
 #### Build Photos
 
-![Team](Add photo of your team here)
+<p align="center">
+  <img src="./build2.jpg" alt="Project Banner" width="100%">
+</p>
+<p align="center">
+  <img src="./build1.jpg" alt="Project Banner" width="100%">
+</p>
 
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
+<p align="center">
+  <img src="./build3.png" alt="Project Banner" width="100%">
+</p>
 
 ![Final](Add photo of final product here)
 *Explain the final build*
