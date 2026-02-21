@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="./img.png" alt="Project Banner" width="100%">
+  <img src="./logo.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# KABADIWALA 
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Bugg
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Aiswarya Mahesh - Muthoot Institute of Technology and Science
+- Member 2: Anjana P.A - Muthoot Institute of Technology and Science
 
 ### Hosted Project Link
 [mention your project hosted link here]
@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
+- Languages used: Html,CSS,Javascript
 - Frameworks used: [e.g., React, Django, Spring Boot]
 - Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Tools used: VS Code
 
 **For Hardware:**
 - Main components: [List main components]
