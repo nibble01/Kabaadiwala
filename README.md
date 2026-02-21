@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" alt="Project Banner" width="100%">
+  <img src="./banner.png" alt="Project Banner" width="100%">
 </p>
 
 # KABADIWALA 
