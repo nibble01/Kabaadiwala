@@ -155,10 +155,10 @@ login or register page
 #### Build Photos
 
 <p align="center">
-  <img src="./build2.jpg" alt="Project Banner" width="100%">
+  <img src="./build2.png" alt="Project Banner" width="100%">
 </p>
 <p align="center">
-  <img src="./build1.jpg" alt="Project Banner" width="100%">
+  <img src="./build1.png" alt="Project Banner" width="100%">
 </p>
 
 <p align="center">
